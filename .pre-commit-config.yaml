@@ -23,4 +23,5 @@ repos:
       - id: mixed-line-ending
       - id: check-added-large-files
         args: [--maxkb=4096]
+        exclude: ^wsi-frontend/public/
   
