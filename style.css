@@ -106,25 +106,62 @@ body {
     border-radius: 5px;
 }
 footer {
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #fff;
-    border-top: 1px solid #eaeaea;
-}
-.footer-content {
-    text-align: center;
-}
-.footer-logo {
-    max-width: 150px;
-    margin: 10px 0;
-}
-.footer-content p {
-    margin: 5px 0;
-}
-.footer-content a {
-    color: #007bff;
-    text-decoration: none;
-}
-.footer-content a:hover {
-    text-decoration: underline;
-}
+    /* ... */
+    display: flex;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .footer-content {
+    display: flex; /* Make content a flexbox too */
+    flex-direction: column; /* Stack content on narrow screens */
+    align-items: center; /* Center text horizontally */
+    gap: 10px; /* Gap for spacing between logo and text */
+  }
+  
+  .logo-container {  display: flex;
+    align-items: center; /* Vertically center logos and text */
+  }
+  
+  .footer-logo {
+    max-width: 150px; /* Set max-width for image */
+    margin: 0; /* Remove margin for better alignment */
+  }
+  
+  .footer-text {
+    font-size: 12px; /* Adjust font size for better look */
+    color: #888; /* Subdued color for copyright text */
+  }
+  
+  .links-section {
+    display: flex; /* Make links section a flexbox */
+    flex-wrap: wrap; /* Wrap links on narrow screens */
+    justify-content: center; /* Center links horizontally */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  
+  .links-section a {
+    display: inline-block; /* Make links similar to links-section */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .links-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  @media (min-width: 768px) { /* Apply styles for wider screens */
+    .footer-content {
+      flex-direction: row; /* Text and image side-by-side */
+      align-items: center; /* Keep vertical centering for logos+text */
+    }
+  
+    .footer-text {
+      margin-left: 20px; /* Add margin between logos and text */
+    }
+  
+    .footer-logo {
+      margin-right: 20px; /* Add margin between image and text */
+    }
+  }
