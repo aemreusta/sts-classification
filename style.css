@@ -9,7 +9,7 @@ body {
 }
 .container {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,10 +29,24 @@ body {
 .content h2 {
     margin-bottom: 10px;
 }
-.content iframe {
+.media-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.video-section, .slider-section {
     width: 100%;
-    height: 400px;
-    max-width: 100%;
+    max-width: 48%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.video-section iframe, .slider-section iframe {
+    width: 100%;
+    height: 300px;
     border: none;
 }
 .project-explanation {
@@ -62,7 +76,59 @@ body {
     color: #888;
     font-style: italic;
 }
+.team-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+.team-section a i {
+    margin-right: 5px;
+}
+.team-section a:hover {
+    text-decoration: underline;
+}
 .keywords {
     margin: 10px 0;
     color: #555;
+}
+.keywords strong {
+    font-weight: bold;
+}
+.keywords em {
+    font-style: italic;
+}
+.technologies {
+    margin: 20px 0;
+}
+.technologies ul {
+    list-style: none;
+    padding: 0;
+}
+.technologies ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+}
+.footer-content {
+    text-align: center;
+}
+.footer-logo {
+    max-width: 150px;
+    margin: 10px 0;
+}
+.footer-content p {
+    margin: 5px 0;
+}
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: underline;
 }
