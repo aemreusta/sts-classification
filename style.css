@@ -198,4 +198,13 @@ footer {
   .footer-logo {
     margin-right: 20px;
   }
+  
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
