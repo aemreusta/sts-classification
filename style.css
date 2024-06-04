@@ -23,6 +23,13 @@ body {
     margin-top: 0;
     color: #888;
 }
+.fancy-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 .content {
     margin-top: 20px;
 }
@@ -38,11 +45,6 @@ body {
 .video-section, .slider-section {
     width: 100%;
     max-width: 48%;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: #fff;
-    margin-bottom: 20px;
 }
 .video-section iframe, .slider-section iframe {
     width: 100%;
@@ -56,9 +58,6 @@ body {
 .project-explanation h3 {
     text-align: center;
 }
-.links-section {
-    margin-bottom: 20px;
-}
 .links-section a {
     display: inline-block;
     margin: 5px 10px;
@@ -67,9 +66,6 @@ body {
 }
 .links-section a:hover {
     text-decoration: underline;
-}
-.team-section {
-    margin-top: 20px;
 }
 .team-section p {
     margin: 5px 0;
