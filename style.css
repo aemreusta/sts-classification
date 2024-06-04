@@ -1,6 +1,5 @@
 body {
   font-family: 'Lato', sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -15,7 +14,8 @@ body {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin: 20px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .header {
@@ -197,5 +197,14 @@ footer {
 
   .footer-logo {
     margin-right: 20px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
   }
 }
