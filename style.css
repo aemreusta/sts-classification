@@ -10,7 +10,7 @@ body {
   
   .container {
     text-align: center;
-    max-width: 90vw; /* Use viewport width for better scaling */
+    max-width: 900px; /* Use viewport width for better scaling */
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
